@@ -5,5 +5,5 @@ class Restaurant < ApplicationRecord
   validates :address, presence: true
   validates :category, presence: true
   validates :category, inclusion: { in: %w(chinese italian japanese french belgian),
-    message: "%{value} is not a valid category"}
+    message: "%{value} is not a valid category" }
 end
